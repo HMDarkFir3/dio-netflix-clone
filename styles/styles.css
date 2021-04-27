@@ -1,7 +1,3 @@
-body {
-  background-color: var(--black);
-}
-
 header .container {
   display: flex;
   align-items: center;
@@ -20,9 +16,61 @@ header nav a {
 
   color: var(--gray-light);
 
-  transition: color 0.5s;
+  transition: color 0.3s;
 }
 
 header nav a:hover {
   color: var(--white);
+}
+
+.principalMovie {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  height: 25rem;
+
+  font-size: 1rem;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/assets/images/capa-house.jpg");
+  background-size: cover;
+}
+
+.principalMovie .title {
+  margin-top: 1.25rem;
+
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-size: 2.5rem;
+}
+
+.principalMovie .description {
+  margin-top: 0.625rem;
+  margin-bottom: 5.625rem;
+}
+
+.button {
+  width: 13rem;
+  height: 2.75rem;
+
+  margin-right: 0.9375rem;
+
+  font-size: 0.75rem;
+  color: var(--white);
+
+  background-color: rgba(0, 0, 0, 0.5);
+  border-width: 0;
+
+  transition: 0.3s ease all;
+}
+
+.button:hover {
+  color: var(--black);
+
+  background-color: var(--white);
+}
+
+.button span {
+  margin-left: 1rem;
 }
