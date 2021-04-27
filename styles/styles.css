@@ -1,0 +1,28 @@
+body {
+  background-color: var(--black);
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  width: auto;
+  height: 5rem;
+
+  margin-left: 1rem;
+}
+
+header nav a {
+  margin-right: 1rem;
+
+  color: var(--gray-light);
+
+  transition: color 0.5s;
+}
+
+header nav a:hover {
+  color: var(--white);
+}
